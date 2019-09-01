@@ -30,3 +30,6 @@ public class MainList {
 //            System.out.print(v + ", ");
     }
 }
+
+
+//TO DO obliczanie czasu sortowañ (zadania prezentacja V)
