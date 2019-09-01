@@ -4,12 +4,18 @@ public class MainList {
 
     public static void main(String[] args) {
 
-        SelectionSort ss = new SelectionSort();
+//        SelectionSort ss = new SelectionSort();
+        QuickSort ss = new QuickSort();
         IList list = new LinkedList();
         list.add(5);
         list.add(1);
         list.add(2);
-        list = ss.sort(list);
+        list.add(5);
+        list.add(7);
+        list.add(0);
+        list.add(4);
+//        list = ss.sort(list);
+        list = ss.sort(list, 0, list.size()-1 );
 
         Object[] tab = list.getHolderView();
 
@@ -17,10 +23,10 @@ public class MainList {
             System.out.print(val + ", ");
         System.out.println();
 
-        int[] tabb =  {3, 1, 5, 11, 9};
+//        int[] tabb =  {3, 1, 5, 11, 9};
 
-        int[] sorted = ss.sort(tabb);
-        for(int v:sorted)
-            System.out.print(v + ", ");
+//        int[] sorted = ss.sort(tabb);
+//        for(int v:sorted)
+//            System.out.print(v + ", ");
     }
 }
